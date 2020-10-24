@@ -1,0 +1,67 @@
+
+* {
+    box-sizing: border-box;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flew-wrap: nowrap;
+
+}
+
+img#jojojordie_logo {
+    display: block;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    width: auto;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 1em;
+    border-radius: 25px;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.about {
+    background-color: rgba(230, 38, 31, 0.80);
+}
+
+.education {
+    background-color:  rgba(235, 117, 50, 0.80);
+}
+
+.experience {
+    background-color:  rgba(247, 208, 56, 0.80);
+}
+
+.skills {
+    background-color: rgba(163, 224, 72, 0.80);
+}
+
+.interests {
+    background-color: rgba(52, 187, 230, 0.80);
+}
+
+.contact {
+    background-color: rgba(67, 85, 219, 0.80);
+}
+
+h1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+.bio_title {
+    display: flex;
+    justify-content: center;
+}
