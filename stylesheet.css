@@ -15,6 +15,8 @@ body {
     background-attachment: fixed;
     font-family: "Roboto", sans-serif;
     color: white;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 footer {
@@ -112,6 +114,7 @@ img#jojojordie_logo:hover {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
 
 .about {
@@ -121,6 +124,7 @@ img#jojojordie_logo:hover {
 .about img {
     width: 150px;
     border-radius: 25px;
+    margin-top: 1.5rem;
 }
 
 .education {
@@ -148,6 +152,7 @@ img#jojojordie_logo:hover {
 .skills img {
     width: 125px;
     border-radius: 10px;
+    margin-top: 1.5rem;
 }
 
 .skills ul img {
@@ -160,6 +165,10 @@ img#jojojordie_logo:hover {
 
 .contact {
     background-color: rgba(67, 85, 219, 0.80);
+}
+
+.contact button {
+    margin-top: 1.5rem;
 }
 
 .email_button {
@@ -201,9 +210,21 @@ img#jojojordie_logo:hover {
 }
 
 h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-shadow: 2px 2px #2e2e2e;
+}
+
+h2 {
     margin-left: auto;
     margin-right: auto;
-    font-size: 2rem;
+    text-shadow: 2px 2px #2e2e2e;
+}
+
+h3 {
+    text-shadow: 2px 2px #2e2e2e;
 }
 
 .bio_title {
