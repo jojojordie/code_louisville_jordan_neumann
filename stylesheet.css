@@ -163,14 +163,42 @@ img#jojojordie_logo:hover {
 }
 
 .email_button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(234, 0, 255);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    box-shadow: 0 6px #ab3c3c;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
 }
 
-.first {
-    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-    &:hover {
-      box-shadow: 0 0 40px 40px rgba(210, 59, 231, 0.80) inset;
-    }
-  }
+.email_button:hover{
+    box-shadow: 0 4px #9e0096;
+	top: 2px;
+}
+
+.email_button:active{
+    box-shadow: 0 0 #9e0096;
+	top: 6px;
+}
+
+
+.email_button:after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
 
 h1 {
     margin-left: auto;
