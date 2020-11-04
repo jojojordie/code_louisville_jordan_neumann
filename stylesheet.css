@@ -162,6 +162,16 @@ img#jojojordie_logo:hover {
     background-color: rgba(67, 85, 219, 0.80);
 }
 
+.email_button {
+}
+
+.first {
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 40px 40px rgba(210, 59, 231, 0.80) inset;
+    }
+  }
+
 h1 {
     margin-left: auto;
     margin-right: auto;
