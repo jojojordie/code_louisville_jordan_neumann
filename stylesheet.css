@@ -189,6 +189,8 @@ h1 {
         min-width: auto;
         max-width: auto;
         margin-top: 66px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     
     .wrapper {
