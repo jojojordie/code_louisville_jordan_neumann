@@ -9,15 +9,25 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    font-family: "Trebuchet MS", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: white;
 }
 
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 33px;
+}
+
+footer img {
+    width: 50px;
+}
 .upper_wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: auto;q
+    width: auto;
 }
 
 .wrapper {
@@ -31,8 +41,60 @@ body {
 img#jojojordie_logo {
     display: block;
     width: 180px;
+    margin-top: 33px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 50%;
+    box-shadow:
+        inset 0 0 50px #fff,      /* inner white */
+        inset 20px 0 80px #f0f,   /* inner left magenta short */
+        inset -20px 0 80px #0ff,  /* inner right cyan short */
+        inset 20px 0 300px #f0f,  /* inner left magenta broad */
+        inset -20px 0 300px #0ff, /* inner right cyan broad */
+        0 0 50px #fff,            /* outer white */
+        -10px 0 80px #f0f,        /* outer left magenta */
+        10px 0 80px #0ff;         /* outer right cyan */
+}
+
+img#jojojordie_logo:hover {
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.audio {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#jordan_neumann {
+    font-size: 2.5rem;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+.bio_title {
+    font-size: 2.5rem;
 }
 
 .card {
@@ -52,16 +114,40 @@ img#jojojordie_logo {
     background-color: rgba(230, 38, 31, 0.80);
 }
 
+.about img {
+    width: 150px;
+    border-radius: 25px;
+}
+
 .education {
     background-color:  rgba(235, 117, 50, 0.80);
+}
+
+.education img {
+    width: 150px;
+    border-radius: 25px;
 }
 
 .experience {
     background-color:  rgba(247, 208, 56, 0.80);
 }
 
+.experience img {
+    width: 150px;
+    border-radius: 25px;
+}
+
 .skills {
     background-color: rgba(163, 224, 72, 0.80);
+}
+
+.skills img {
+    width: 125px;
+    border-radius: 10px;
+}
+
+.skills ul img {
+    width: 50px;
 }
 
 .interests {
@@ -115,6 +201,8 @@ h1 {
 
 @media (min-width: 1000px) {
     .card {
+        min-width: 300px;
+        max-width: 16%;
     }
     .wrapper {
         align-items: center;
