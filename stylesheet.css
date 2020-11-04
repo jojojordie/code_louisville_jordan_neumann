@@ -2,6 +2,17 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    background: url("images/eagle_nebula.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Trebuchet MS", sans-serif;
+    color: white;
+}
+
 .wrapper {
     display: flex;
     justify-content: center;
@@ -55,10 +66,7 @@ img#jojojordie_logo {
 h1 {
     margin-left: auto;
     margin-right: auto;
-}
-
-body {
-    font-family: "Trebuchet MS", sans-serif;
+    font-size: 2rem;
 }
 
 .bio_title {
