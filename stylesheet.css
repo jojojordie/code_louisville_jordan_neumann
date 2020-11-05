@@ -39,6 +39,7 @@ footer img {
 .wrapper {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
 
@@ -104,9 +105,7 @@ img#jojojordie_logo:hover {
 }
 
 .card {
-    width: auto;
-    margin-left: 33px;
-    margin-right: 33px;
+    width: 300px;
     margin-top: 33px;
     border-radius: 25px;
     padding: 1em;
@@ -372,13 +371,27 @@ h2, h3{
     transition: color 0.4s ease;
   }
 
+.first_column {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.last_column {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.biopic {
+    width: 300px;
+    margin-top: 33px;
+    border-radius: 25px;
+}
 
 @media (min-width: 601px) {
-    .card {
-        min-width: 300px;
-        max-width: 300px;
-    }
-
     .wrapper {
         flex-direction: column;
         justify-content: center;
@@ -386,16 +399,16 @@ h2, h3{
     }
 }
 
-@media (min-width: 1000px) {
-    .card {
-        min-width: 300px;
-        max-width: 16%;
-        margin-left: 10px;
-        margin-right: 10px;
+@media (min-width: 1335px) {
+
+    .column {
+        margin-left: 16.5px;
+        margin-right: 16.5px;
     }
+
     .wrapper {
-        align-items: center;
-        justify-content: space-evenly;
+        align-items: flex-start;
+        justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
     }

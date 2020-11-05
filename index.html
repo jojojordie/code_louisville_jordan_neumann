@@ -49,31 +49,39 @@
         </div>    
 
         <div class="wrapper">
-            <section class="card about" id="about">
-                <h1 class="bio_title">About Me</h1>
+
+            <div class="first_column column">
+
+                <section class="card about" id="about">
+                    <h1 class="bio_title">About Me</h1>
+                    <p>&emsp;Hi! I'm Jordan Neumann. I am a Junior Web Developer and have just graduated with my Master's in Buddhist Studies.
+                        I am an impassioned learner, I just can't stop trying to learn something new, to develop new skills, and find ways to express my imagination.
+                        Web Design is a perfect outlet for such creativity, and I am excited about my exploration and development of a Web Design skillset.
+                    </p>
+                </section>
+
                 <img src="images\biopic.jpg" class="biopic">
-                <p>&emsp;Hi! I'm Jordan Neumann. I am a Junior Web Developer and have just graduated with my Master's in Buddhist Studies.
-                    I am an impassioned learner, I just can't stop trying to learn something new, to develop new skills, and find ways to express my imagination.
-                    Web Design is a perfect outlet for such creativity, and I am excited about my exploration and development of a Web Design skillset.
-                </p>
-            </section>
 
-            <section class="card education" id="education">
-                <h1 class="bio_title">Education</h1>
-                <h2>CodeLouisville - 2020 </h2>
-                <img src="images\biopictures\code-louisville-logo.png">
-                <p>&emsp;Student at CodeLouisville. Front End Web Development. HTML, CSS, JavaScript. Git and Github. Learning C# for it's applications in Unity.</p>
-                <h2>MA in Comparative Humanities: Buddhist Philosophy</h2>
-                <img src="images\biopictures\uofl-logo.jpeg">
-                <h3>University of Louisville - 2020</h3>
-                <p>"The View of No Views" : Doxographical Distinctions Between the Svatantrika & Prasangika Schools of Nagarjuna's Madhyamaka "Middle Way" Philosophy</p>
-                <h2>B.S. in Anthropology: Biological and Cultural</h2>
-                <img src="images\biopictures\uk-logo.jpg">
-                <h3>University of Kentucky - 2014</h3>
-                <p>&emsp;For my capstone I travelled to Karanataka, South India and did ethnographic research with Tibetan monastics at the Drepung and Sera monasteries for 5 months. This culminated in several papers and undergraduate research awards</p>
-            </section>
+            </div>
 
-            
+            <div class="second_column column">
+                <section class="card education" id="education">
+                    <h1 class="bio_title">Education</h1>
+                    <h2>CodeLouisville - 2020 </h2>
+                    <img src="images\biopictures\code-louisville-logo.png">
+                    <p>&emsp;Student at CodeLouisville. Front End Web Development. HTML, CSS, JavaScript. Git and Github. Learning C# for it's applications in Unity.</p>
+                    <h2>MA in Comparative Humanities: Buddhist Philosophy</h2>
+                    <img src="images\biopictures\uofl-logo.jpeg">
+                    <h3>University of Louisville - 2020</h3>
+                    <p>"The View of No Views" : Doxographical Distinctions Between the Svatantrika & Prasangika Schools of Nagarjuna's Madhyamaka "Middle Way" Philosophy</p>
+                    <h2>B.S. in Anthropology: Biological and Cultural</h2>
+                    <img src="images\biopictures\uk-logo.jpg">
+                    <h3>University of Kentucky - 2014</h3>
+                    <p>&emsp;For my capstone I travelled to Karanataka, South India and did ethnographic research with Tibetan monastics at the Drepung and Sera monasteries for 5 months. This culminated in several papers and undergraduate research awards</p>
+                </section>
+            </div>
+
+            <div class="third_column column">
             <section class="card experience" id="experience">
                 <h1 class="bio_title">Experience</h1>
                 <h2>502 VideoPost: Video Production Company</h2>
@@ -89,33 +97,37 @@
                 <h3>Bartender</h3>
                 <p>Bartending, Serving, Barbacking: I know how to make tasty cocktails!</p>
             </section>
-            
-            <section class="card skills" id="skills">
-                <h1 class="bio_title">Skills</h1>
-                    <img src="images\biopictures\html_css_js.png">
-                    <ul>
-                        <li>HTML, CSS, JavaScript.</li>
-                        <li>Adobe Creative Cloud Suite: XD, Illustrator, Photoshop, After Effects</li>
-                        <li>Git & Github</li>
-                        <li>I enjoy reading, writing, formulating new ideas, defending arguments, and presenting - familiar with the Microsoft Office Suite</li>
-                    </ul>
-            </section>
-            
-            <section class="card interests" id="interests">
-                <h1 class="bio_title">Interests</h1>
-                    <ul>
-                        <li>I read and speak the Tibetan Language proficiently!</li>
-                        <li>I like to make music on my synth with Ableton and upload weird little Indie Electronic songs to my <a href="https://soundcloud.com/jojojordie">SoundCloud</a></li>
-                        <li>I keep freshwater tropical fish and endangered salamanders called Axolotls.</li>
-                        <li>I play many PC games, and always stay updated on the lastest new game.</li>
-                    </ul>
-            </section>
+            </div>
+
+            <div class="last_column column">
+                <section class="card skills" id="skills">
+                    <h1 class="bio_title">Skills</h1>
+                        <img src="images\biopictures\html_css_js.png">
+                        <ul>
+                            <li>HTML, CSS, JavaScript.</li>
+                            <li>Adobe Creative Cloud Suite: XD, Illustrator, Photoshop, After Effects</li>
+                            <li>Git & Github</li>
+                            <li>I enjoy reading, writing, formulating new ideas, defending arguments, and presenting - familiar with the Microsoft Office Suite</li>
+                        </ul>
+                </section>
+                
+                <section class="card interests" id="interests">
+                    <h1 class="bio_title">Interests</h1>
+                        <ul>
+                            <li>I read and speak the Tibetan Language proficiently!</li>
+                            <li>I like to make music on my synth with Ableton and upload weird little Indie Electronic songs to my <a href="https://soundcloud.com/jojojordie">SoundCloud</a></li>
+                            <li>I keep freshwater tropical fish and endangered salamanders called Axolotls.</li>
+                            <li>I play many PC games, and always stay updated on the lastest new game.</li>
+                        </ul>
+                </section>
 
             <section class="card contact" id="contact"> 
                 <h1 class="bio_title">Contact</h1>
                 <button onclick="sendMail(); return false" class="email_button">EMAIL ME</button>
+                <p>jordan.neumann@gmail.com</p>
                 <p>502-851-1682</p>
             </section>
+        </div>
 
         </div>
 
